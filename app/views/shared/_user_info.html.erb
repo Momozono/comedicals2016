@@ -1,0 +1,26 @@
+ <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+      <a href="<%= user_path(current_user) %>">
+        <%= gravatar_for current_user %>
+      </a>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <div class="user_info_name">
+        <% if @professions.any? %> <%# if @professions.any?だとエラーになる %>
+          <% @professions.each do |profession| %>
+            <%= image_tag("#{profession.profession_name}.png", size: "35x35", alt: "profession_icon") %><%#= current_user.name %>
+          <% end %>
+        <% end %>
+        </div>
+
+        <span>
+          <%= link_to "Profile", user_path(current_user) %>
+        </span>
+        <span>
+          <%= pluralize(current_user.microposts.count, "micropost") %> now.
+        </span>
+        <div class="profile_comment">
+        </div>
+    </div>
+</div>

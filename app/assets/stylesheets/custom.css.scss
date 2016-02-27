@@ -1,0 +1,275 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Fascinate');
+@import url('https://fonts.googleapis.com/css?family=Asul:400,700');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700,300');
+
+html {
+  overflow-y: scroll;
+}
+body {
+  padding-top: 70px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  background-color: #f1f1f1;
+}
+.center {
+  text-align: center;
+}
+.center h1 {
+  margin-bottom: 10px;
+}
+/* typography */
+h1 {
+  line-height: 1;
+}
+h1 {
+  font-size: 3em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+p {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+
+/* header */
+li {
+  font-size: 1.2em;
+  color: #66CCCC;
+  list-style: none;
+}
+#header{
+  color: #f1f1f1;
+  font-size: 20px;
+}
+
+#header:hover {
+  color: #ddd;
+}
+/*
+.dropdown {
+  color: #FF99CC;
+}
+.dropdown:hover {
+  color: #FF99CC;
+}
+*/
+
+.dropdown-toggle {
+  color: #f1f1f1;
+}
+#account {
+  color: #f1f1f1;
+  font-size:20px;
+}
+#dropdown-color {
+  color: #f1f1f1;
+
+}
+
+/* profile page */
+.topname {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.microposts_area{
+  margin-top: 30px;
+}
+
+
+.submit_button {
+  text-align: right;
+}
+.timeline_title {
+  font-family: 'Nunito', sans-serif;
+}
+.field {
+  margin-top: 50px;
+}
+.profile_comment {
+  font-size: 9px;
+}
+
+
+/* logo */
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 2.0em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: #66CCCC;
+}
+#logo:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+/*  button */
+#button {
+  margin-top: 40px;
+
+}
+/*  footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: right;
+}
+
+
+.debug_dump {
+  clear: both;
+  text-align: center;
+  width: 800px;
+  margin-top: 45px;
+}
+/* form */
+
+/* micropost */
+
+.micropost {
+  margin: 50px 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
+  /*
+  border-top: 1px solid #336699;
+  */
+  list-style: none;
+  color: black;
+  font-size: 20px;
+}
+.content {
+  font-size: 16px;
+}
+.feed_content{
+  color: black;
+}
+
+.user_info_name {
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.textbox_feed {
+  margin-top: 30px;
+
+}
+#error_explanation {
+  color: #f00;
+  text-align: center;
+  font-color: red;
+}
+
+
+
+
+/*******************************
+* 左からの吹き出し
+********************************/
+.left_balloon {
+    position: relative;
+    background: #fff;
+    border: 1px solid #777;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 20%;
+    clear: both;
+    max-width: 500px;
+    float: left;
+}
+.left_balloon:after,
+.left_balloon:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.left_balloon:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 7px;
+    margin-top: -7px;
+}
+.left_balloon:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-right-color: #000;
+    border-width: 8px;
+    margin-top: -8px;
+}
+
+/*******************************
+* 右からの吹き出し
+********************************/
+.right_balloon {
+    position: relative;
+    background: #85e249;
+    border: 1px solid #777;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 20%;
+    clear: both;
+    max-width: 500px;
+    float: right;
+}
+.right_balloon:after,
+.right_balloon:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.right_balloon:after {
+    border-color: rgba(133, 226, 73, 0);
+    border-left-color: #85e249;
+    border-width: 7px;
+    margin-top: -7px;
+}
+.right_balloon:before {
+    border-color: rgba(119, 119, 119, 0);
+    border-left-color: #777;
+    border-width: 8px;
+    margin-top: -8px;
+}
+
+/*******************************
+* 割り込みを解除
+********************************/
+.clear_balloon{
+  clear: both;
+}
+
